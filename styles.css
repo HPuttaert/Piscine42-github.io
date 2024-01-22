@@ -450,4 +450,39 @@ footer {
   .footer .footer-links {
     margin-bottom: 10px;
   }
+
+ /* Additional responsive layout adjustments for mobile view */
+@media only screen and (max-width: 768px) {
+  /* Make the title smaller */
+  .title {
+    font-size: 16px; /* Adjust title font size to 16px */
+  }
+
+  /* Add a break after the 'Hi there' text and before the picture */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section .text-container {
+    margin-bottom: 20px; /* Add space between text and image */
+  }
+
+  /* Make the footer text smaller and align items vertically */
+  .footer {
+    font-size: 12px; /* Adjust footer font size to 12px */
+  }
+
+  .footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-links a {
+    display: block; /* Stack links vertically */
+    margin-bottom: 5px;
+  }
+}
 }
