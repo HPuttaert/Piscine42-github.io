@@ -389,7 +389,7 @@ footer {
 /* Responsive layout adjustments */
 @media only screen and (max-width: 768px) {
   .header {
-    padding: 60px;
+    padding: 40px;
   }
 
   /* Additional styles for mobile layout */
@@ -482,6 +482,5 @@ footer {
   }
 }
 
-}
 }
 }
