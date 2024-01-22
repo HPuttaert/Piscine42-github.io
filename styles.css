@@ -396,3 +396,58 @@ footer {
 }
 
 /* Add your custom styles below */
+
+/* Responsive layout adjustments for mobile view */
+@media only screen and (max-width: 768px) {
+  /* Stack elements vertically */
+  .header-section,
+  .profile,
+  .content-section,
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile img {
+    width: 100%; /* Adjust image width for smaller screens */
+    height: auto;
+  }
+
+  /* Add additional responsive styles as needed */
+}
+
+/* Responsive layout adjustments for mobile view */
+@media only screen and (max-width: 768px) {
+  /* Stack profiles vertically */
+  .profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    margin-bottom: 20px; /* Add space between stacked profiles */
+  }
+
+  /* Adjust "Hi there" section image for mobile view */
+  .about-section .image-container img {
+    width: 100%; /* Adjust image width for smaller screens */
+    height: auto;
+  }
+
+  /* Adjust footer for mobile view */
+  .footer {
+    text-align: center;
+  }
+
+  .footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-links {
+    margin-bottom: 10px;
+  }
+}
