@@ -389,7 +389,7 @@ footer {
 /* Responsive layout adjustments */
 @media only screen and (max-width: 768px) {
   .header {
-    padding: 20px;
+    padding: 40px;
   }
 
   /* Additional styles for mobile layout */
@@ -443,6 +443,12 @@ footer {
     font-size: 8px; /* Adjust title font size to 16px */
   }
 
+  /* Make the title smaller and align it to the left for mobile view */
+.title {
+  font-size: 16px; /* Adjust title font size to 16px for mobile view */
+  text-align: left; /* Align title to the left for mobile view */
+}
+
   /* Add a break after the 'Hi there' text and before the picture */
   .about-section {
     display: flex;
@@ -454,29 +460,25 @@ footer {
     margin-bottom: 20px; /* Add space between text and image */
   }
 
-  /* Responsive adjustments for the footer in mobile view */
+/* Add these styles for mobile view */
 @media only screen and (max-width: 768px) {
-  /* Adjustments for the footer */
   .footer {
-      text-align: center; /* Center align footer text */
-      font-size: 0.5em; /* Set font size to 5px */
+    padding: 15px;
+    text-align: left; /* Align text to the left for mobile view */
   }
 
-  .footer .footer-content,
-  .footer .footer-links {
-      display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;
-      padding: 0; /* Remove any padding that might be affecting layout */
+  .footer-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
   }
 
-  .footer .footer-links a {
-      display: block; /* List each link as a block */
-      margin-bottom: 5px; /* Space between items */
+  .footer-links a {
+    display: block; /* List each link as a block */
+    margin-bottom: 10px; /* Add space between items */
   }
 
-  .footer .footer-links {
-      width: 100%; /* Ensure full width for alignment */
+  .copyright {
+    text-align: right; /* Align copyright text to the right */
   }
 }
 }
