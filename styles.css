@@ -458,10 +458,6 @@ footer {
     font-size: 12px; /* Adjust title font size to 16px */
   }
 
-  .title-container {
-    margin-bottom: 30px; /* Increase bottom margin */
-  }
-
   /* Add a break after the 'Hi there' text and before the picture */
   .about-section {
     display: flex;
@@ -484,16 +480,32 @@ footer {
     align-items: center;
   }
 
-  .footer .footer-links a,
-  .footer .footer-links {
+  .footer .footer-links a {
     display: block; /* Stack links vertically */
+    margin-bottom: 5px;
+  }
+
+  /* Additional responsive layout adjustments for mobile view */
+@media only screen and (max-width: 768px) {
+  /* Increase the bottom margin of the title container */
+  .title-container, .header-section h1, .header-section h2 {
+    margin-bottom: 30px; /* Increase bottom margin */
+  }
+
+  /* Adjust footer items to be listed vertically */
+  .footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-content div,
+  .footer .footer-links,
+  .footer .footer-links a {
+    display: block; /* Ensure each element is a block to stack vertically */
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
-  }
-
-  .footer .footer-links {
-    padding: 0;
   }
 }
 }
