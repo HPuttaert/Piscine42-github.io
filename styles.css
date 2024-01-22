@@ -436,26 +436,11 @@ footer {
     height: auto;
   }
 
-  /* Adjust footer for mobile view */
-  .footer {
-    text-align: center;
-  }
-
-  .footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer .footer-links {
-    margin-bottom: 10px;
-  }
-
  /* Additional responsive layout adjustments for mobile view */
 @media only screen and (max-width: 768px) {
   /* Make the title smaller */
   .title {
-    font-size: 12px; /* Adjust title font size to 16px */
+    font-size: 8px; /* Adjust title font size to 16px */
   }
 
   /* Add a break after the 'Hi there' text and before the picture */
@@ -469,43 +454,29 @@ footer {
     margin-bottom: 20px; /* Add space between text and image */
   }
 
-  /* Make the footer text smaller and align items vertically */
-  .footer {
-    font-size: 12px; /* Adjust footer font size to 12px */
-  }
-
-  .footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer .footer-links a {
-    display: block; /* Stack links vertically */
-    margin-bottom: 5px;
-  }
-
-  /* Additional responsive layout adjustments for mobile view */
+  /* Responsive adjustments for the footer in mobile view */
 @media only screen and (max-width: 768px) {
-  /* Increase the bottom margin of the title container */
-  .title-container, .header-section h1, .header-section h2 {
-    margin-bottom: 30px; /* Increase bottom margin */
+  /* Adjustments for the footer */
+  .footer {
+      text-align: center; /* Center align footer text */
+      font-size: 0.5em; /* Set font size to 5px */
   }
 
-  /* Adjust footer items to be listed vertically */
-  .footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .footer .footer-content,
+  .footer .footer-links {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+      padding: 0; /* Remove any padding that might be affecting layout */
   }
 
-  .footer .footer-content div,
-  .footer .footer-links,
   .footer .footer-links a {
-    display: block; /* Ensure each element is a block to stack vertically */
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
+      display: block; /* List each link as a block */
+      margin-bottom: 5px; /* Space between items */
+  }
+
+  .footer .footer-links {
+      width: 100%; /* Ensure full width for alignment */
   }
 }
 }
