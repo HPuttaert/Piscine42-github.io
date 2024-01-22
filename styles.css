@@ -480,12 +480,6 @@ footer {
   .copyright {
     text-align: right; /* Align copyright text to the right */
   }
-  
-  /* Make the header h1 smaller in mobile version */
-@media only screen and (max-width: 768px) {
-  .header h1 {
-    font-size: 5px; /* Adjust header h1 font size for mobile view */
-  }
 }
 
 }
