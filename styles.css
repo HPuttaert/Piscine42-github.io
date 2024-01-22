@@ -455,7 +455,7 @@ footer {
 @media only screen and (max-width: 768px) {
   /* Make the title smaller */
   .title {
-    font-size: 16px; /* Adjust title font size to 16px */
+    font-size: 12px; /* Adjust title font size to 16px */
   }
 
   /* Add a break after the 'Hi there' text and before the picture */
